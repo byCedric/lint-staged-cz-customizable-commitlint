@@ -1,0 +1,12 @@
+{
+	"*.js": [
+		"pretty-quick --staged",
+		"eslint src/ --fix",
+		"git add",
+		"eslint --fix"
+	],
+	"*.css": [
+		"stylelint src/ --fix",
+		"git add"
+	]
+}
